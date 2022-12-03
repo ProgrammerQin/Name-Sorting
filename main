@@ -1,0 +1,27 @@
+import time
+from Bubble_Sort_Sequential import bubblesort,name_list
+
+start = time.time()
+# Compare
+
+bubblesort()
+name_list = [" ".join(k.split(" ")[::-1]) for k in name_list]
+
+print("After Sorting:", name_list)
+print("Length After Sorting:", len(name_list))
+print("Name Sorting Completed")
+end = time.time()
+
+Executation_time = float(end - start)*1000
+print("Name Sorting Time (ms) Is : ", "%.2f" % Executation_time)
+
+# Sorting Result:
+# Sequential Bubble Sort: Name Sorting Time (ms) Is :  830939.6381378
+
+# echo "# Name-Sorting" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/StartSlowButGrowFast/Name-Sorting.git
+git push -u origin main
